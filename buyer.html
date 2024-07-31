@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!----font css-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!---bootstrap 5 css & js-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+<style>
+  .offcanvas {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 28, 28);
+    width:300px;
+    color: azure;
+  }
+  .body{
+    background-color:light ;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+   
+  }
+  .card-body{
+    color:darkgreen;
+  }
+  .h-font{
+font-family:bold;
+font-weight: 700;
+color: darkgreen;
+}
+  .trans:hover{
+transform: translateY(-30px);
+transition: all .5s;
+border:solid 1px green;
+  }
+  .f-font{
+        color:white;
+      }
+      .box:hover{
+        transform: translateY(-30px);
+transition: all .5s;
+      }
+.custom a:hover{
+    border:solid green 1px;
+    border-radius: 10px;
+    background-color: green;
+
+
+}
+.custom a{
+    font-size:25px;
+    margin-left: 30px;
+}
+.h{
+  width:200px;
+}
+.card{
+  width:270px;
+}
+.card-img-top{
+  width:270px;
+  height:200px;
+}
+</style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-success" style="box-shadow:0 0 15px rgba(0,0,0,0.6);transition:0.2s ease-in-out;">
+    <a class="navbar-brand" href="index.html">
+      <img src="image/logo.jpg" width="100" height="100" alt="" class="rounded-circle">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+  
+
+
+        <li class="nav-item active custom">
+          <a class="nav-link" href="buyer.html" style="color:white;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item  custom">
+          <a class="nav-link" href="abou.html" style="color:white;">About</a>
+        </li>
+        <li class="nav-item  custom">
+          <a class="nav-link " href="helper.html" style="color:white;">Help</a>
+        </li>
+        <li class="  nav-item custom">
+          <a class="nav-link " href="buyer.html" style="color:white;">Product</a>
+        </li>
+        <li class="nav-item custom">
+          <a class="nav-link " href="seller.html" style="color:white;">Sell Product</a>
+        </li>
+
+        <li class="nav-item dropdown  custom">
+          <a class="nav-link dropdown-toggle" href="#"  style="color:white;" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#farming" >Farming</a>
+            <a class="dropdown-item" href="#dairy">Dairy</a>
+            <a class="dropdown-item" href="#utensils">Utensils</a>
+           
+        <a class="dropdown-item" href="#fashion" >Fashion</a>
+          <a class="dropdown-item" href="#furniture" >Furniture</a>
+            <a class="dropdown-item" href="#craft" >Craft</a>
+
+          
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <i class="fa-solid fa-magnifying-glass" style="color:white;font-size:24px;padding:20px;"></i>
+<i class="fas fa-user-alt" data-toggle="modal" data-target="#exampleModalCenter" style="color:white;font-size:24px;padding:20px;"></i>
+<i class="fas fa-shopping-cart"  style="color:white;font-size:24px;"></i>
+      </form>
+     </div>
+    
+  </nav>
+  
+    <!-- Just an image -->
+<nav class="navbar navbar-success bg-light container-fluid">
+  <a class="navbar-brand" href="#farming">
+    <img src="image/f1.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+  <a class="navbar-brand" href="#dairy">
+    <img src="image/f6.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+  <a class="navbar-brand" href="#utensils">
+    <img src="image/f2.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+  <a class="navbar-brand" href="#fashion">
+    <img src="image/f3.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+  <a class="navbar-brand" href="#furniture">
+    <img src="image/f4.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+  <a class="navbar-brand" href="#craft">
+    <img src="image/f5.jpg" width="100" height="100" alt="" class="rounded-circle">
+  </a>
+</nav>
+<div id="carouselExampleSlidesOnly" class="carousel slide container-fluid" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="image/s1.jpg" alt="First slide" style="height:400px;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/s2.jpg" alt="Second slide" style="height:400px;">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/s3.jpg" alt="Third slide" style="height:400px;">
+    </div>
+
+  </div>
+</div>
+
+<!------card1-->
+<h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="farming">Farming</h2>
+
+<div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans">
+  <img class="card-img-top" src="image/wheat.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-center">wheat</h5>
+    <p class="card-text text-center"> Price:</p>
+    <button class="btn btn-outline-success btn-block shadow-none"
+     data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" 
+     aria-controls="offcanvasExample">&#x1f441view</button>
+</div>
+</div>
+</div>
+
+<!----card2-->
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans" >
+  <img class="card-img-top" src="image/brokli.jpeg" alt="Card image cap">
+  <div class="card-body">
+      <h5 class="card-title text-center">Broccoli</h5>
+      <p class="card-text text-center"> Price:</p>
+          <button class="btn btn-outline-success btn-block shadow-none"
+     data-bs-toggle="offcanvas" href="#offcanvasExample1" role="button" 
+     aria-controls="offcanvasExample1">&#x1f441view</button>
+    </div>
+     </div>
+</div>
+  <!-----card3-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans" >
+    <img class="card-img-top" src="image/rice.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">Rice</h5>
+    <p class="card-text text-center"> Price:</p>
+    <a href="#"class="btn btn-outline-success btn-block"> &#x1f441view</a>
+</div>
+        </div>
+  </div>
+  <!-----card4-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans">
+    <img class="card-img-top" src="image/beans.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">Beans</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="col-lg-12 text-center mt-3">
+  <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+  </div>
+
+   <!-----------------Dairy-------->
+   <h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="dairy">Dairy</h2>
+
+   <div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+   <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+   <div class="card trans">
+     <img class="card-img-top" src="image/dairy1.webp" alt="Card image cap">
+     <div class="card-body">
+       <h5 class="card-title text-center">Milk</h5>
+       <p class="card-text text-center"> Price:</p>
+       <a href="#"class="btn btn-outline-success btn-block">&#x1f441view</a>
+   </div>
+   </div>
+   </div>
+   <!----card2-->
+   <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+   <div class="card trans" >
+     <img class="card-img-top" src="image/ghee.jpeg" alt="Card image cap">
+     <div class="card-body">
+         <h5 class="card-title text-center">Ghee</h5>
+         <p class="card-text text-center"> Price:</p>
+         <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+       </div>
+        </div>
+   </div>
+     <!-----card3-->
+     <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+     <div class="card trans" >
+       <img class="card-img-top" src="image/curd.jpeg" alt="Card image cap">
+       <div class="card-body">
+         <h5 class="card-title text-center">Curd</h5>
+       <p class="card-text text-center"> Price:</p>
+       <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+   </div>
+           </div>
+     </div>
+     <!-----card4-->
+     <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+     <div class="card trans">
+       <img class="card-img-top" src="image/lcurd.jpeg" alt="Card image cap">
+       <div class="card-body">
+         <h5 class="card-title text-center">Lemon Curd</h5>
+         <p class="card-text text-center"> Price:</p>
+         <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+     </div>
+     </div>
+     </div>
+   </div>
+   <div class="col-lg-12 text-center mt-3">
+     <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+     </div>
+ <!------------------------UTENSILS------------->
+ <h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="utensils">Utensils</h2>
+
+ <div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+ <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+ <div class="card trans">
+   <img class="card-img-top" src="image/brass.webp" alt="Card image cap">
+   <div class="card-body">
+     <h5 class="card-title text-center">wheat</h5>
+     <p class="card-text text-center"> Price:</p>
+     <a href="#"class="btn btn-outline-success btn-block">&#x1f441view</a>
+ </div>
+ </div>
+ </div>
+ <!----card2-->
+ <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+ <div class="card trans" >
+   <img class="card-img-top" src="image/brass2.jpeg" alt="Card image cap">
+   <div class="card-body">
+       <h5 class="card-title text-center">wheat</h5>
+       <p class="card-text text-center"> Price:</p>
+       <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+     </div>
+      </div>
+ </div>
+   <!-----card3-->
+   <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+   <div class="card trans" >
+     <img class="card-img-top" src="image/lota.jpeg" alt="Card image cap">
+     <div class="card-body">
+       <h5 class="card-title text-center">wheat</h5>
+     <p class="card-text text-center"> Price:</p>
+     <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+ </div>
+         </div>
+   </div>
+   <!-----card4-->
+   <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+   <div class="card trans">
+     <img class="card-img-top" src="image/u2.jpeg" alt="Card image cap">
+     <div class="card-body">
+       <h5 class="card-title text-center">wheat</h5>
+       <p class="card-text text-center"> Price:</p>
+       <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+   </div>
+   </div>
+   </div>
+ </div>
+ <div class="col-lg-12 text-center mt-3">
+   <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+   </div>
+
+
+    <!---------------Fashion----------->
+    <h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="fashion">Fashion</h2>
+
+<div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans">
+  <img class="card-img-top" src="image/saari.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-center">wheat</h5>
+    <p class="card-text text-center"> Price:</p>
+    <a href="#"class="btn btn-outline-success btn-block">&#x1f441view</a>
+</div>
+</div>
+</div>
+<!----card2-->
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans" >
+  <img class="card-img-top" src="image/sweater.jpeg" alt="Card image cap">
+  <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block"> &#x1f441view</a>
+    </div>
+     </div>
+</div>
+  <!-----card3-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans" >
+    <img class="card-img-top" src="image/scarves.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+    <p class="card-text text-center"> Price:</p>
+    <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+</div>
+        </div>
+  </div>
+  <!-----card4-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans">
+    <img class="card-img-top" src="image/shawl.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="col-lg-12 text-center mt-3">
+  <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+  </div>
+  <!----------------Furniture------------->
+  <h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="furniture">Furniture</h2>
+
+  <div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans">
+    <img class="card-img-top" src="image/fur.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">Bed</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block">&#x1f441view</a>
+  </div>      
+  </div>
+  </div>
+  <!----card2-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans" >
+    <img class="card-img-top" src="image/fur2.jpeg" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title text-center">Chair</h5>
+        <p class="card-text text-center"> Price:</p>
+        <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+      </div>
+       </div>
+  </div>
+    <!-----card3-->
+    <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+    <div class="card trans" >
+      <img class="card-img-top" src="image/fur3.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Table</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+  </div>
+          </div>
+    </div>
+    <!-----card4-->
+    <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+    <div class="card trans">
+      <img class="card-img-top" src="image/fur4.jpeg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title text-center">Dining Table</h5>
+        <p class="card-text text-center"> Price:</p>
+        <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="col-lg-12 text-center mt-3">
+    <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+    </div>
+  <!--------------------Craft----------->
+  <h2 class="text-center mt-5 mb-4 pt-4 fw-bold h-font" id="craft">Crafts</h2>
+
+<div class="row justify-content-evenly px-lg-5 px-md-0 px-5">
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans">
+  <img class="card-img-top" src="image/c1.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title text-center">wheat</h5>
+    <p class="card-text text-center"> Price:</p>
+    <a href="#"class="btn btn-outline-success btn-block">&#x1f441view</a>
+</div>
+</div>
+</div>
+<!----card2-->
+<div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+<div class="card trans" >
+  <img class="card-img-top" src="image/c2.jpeg" alt="Card image cap">
+  <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+    </div>
+     </div>
+</div>
+  <!-----card3-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans" >
+    <img class="card-img-top" src="image/c3.webp" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+    <p class="card-text text-center"> Price:</p>
+    <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+</div>
+        </div>
+  </div>
+  <!-----card4-->
+  <div class="col-lg-3 col-md-2 text-center bg-white rounded shadow py-4 my-4 border-0">
+  <div class="card trans">
+    <img class="card-img-top" src="image/c4.jpeg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">wheat</h5>
+      <p class="card-text text-center"> Price:</p>
+      <a href="#"class="btn btn-outline-success btn-block" > &#x1f441view</a>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="col-lg-12 text-center mt-3">
+  <a href="#" class="btn btn-sm btn-outline-dark fw-bold shadow-none rounded-0">More ..>>></a>
+  </div>
+<!--icon Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="position:absolute;left:200px;">User Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <i class="fa fa-user"></i>
+      </div>
+</div>
+    </div>
+  </div>
+</div>
+<!--modal card-->
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class=" modal-title font fw-bold">Welcome</h5>
+        <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>you can believe in our facility we will take care of your responsibility:</p><br>
+        <h4>Please notify us if you are a buyer or a seller?
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------FOOTER--------------->
+<div class="container-fluid bg-dark mt-4" style="width:100%;padding-left:30px;">
+  <div class="row">
+  <div class="col-lg-3 p-4">
+  <h3 class=" fw-bold fs-3 mb-3 f-font">RURAL RISE</h3>
+  <p class="f-font">
+  this website is useful for villagers who wants to sell their products and anything ,the villagers do not able to contact with the exact BUYERS
+  so they have to sell their products in low price to the other small party,, so by using this
+  website they can easily sell and contact with exact buyer and also the buyers will got 
+  the pure products as they want thanking you!!!!!!. 
+  </p>
+  </div>
+  <div class="col-lg-3 p-4 ">
+  <h5 class="mb-3 f-font">Links</h5>
+  <a href="index.html"class="d-inline-block text-white text-decoration-none" >Home</a><br>
+  <a href="abou.html"class="d-inline-block text-white text-decoration-none" > About Us</a><br>
+  
+  <a href="help.html"class="d-inline-block text-white text-decoration-none" >Help</a><br>
+  <a href="seller.html"class="d-inline-block text-white text-decoration-none" >sell Product</a><br>
+  <a href="buyer.html"class="d-inline-block text-white text-decoration-none" >Buy Product</a><br>
+  
+  </div>
+  <div class="col-lg-3 p-4 ">
+    <h5 class="mb-3 f-font">Contact Us</h5>
+    <a href="#"class="d-inline-block text-white text-decoration-none" >Email:teamtyro@gmail.com</a><br>
+    <a href="#"class="d-inline-block text-white text-decoration-none" >phone:8720330152</a><br>
+    <a href="#"class="d-inline-block text-white text-decoration-none" >Address:Ranchi</a><br>
+    </div>
+  <div class="col-lg-3 p-4 f-font">
+  <h5 class="mb-3 f-font f-font">Follow us</h5>
+  <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="bi bi-twitter me-1"></i>Twitter</a><br>
+  
+  <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="bi bi-facebook me-1"></i>Facebook</a><br>
+  
+  <a href="#"class="d-inline-block text-white text-decoration-none " ><i class="bi bi-instagram me-1"></i>Instagram</a><br>
+  </div>
+  </div>
+  </div>
+  <h6 class="bg-dark text-center text-white m-0 p-4">Designed and Developed by TYRO</h6>
+  
+
+<!---------------FOOTER CLOSE---------------->
+<!---modal details-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+   <div class="offcanvas-header">
+     <img class="card-img-top" src="image/wheat.jpeg" alt="Card image cap">
+    </div>
+     <div class="offcanvas-body">
+       <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span class="fw-bold " style="color:darkgreen"> 
+        Product Name:</span>Wheat
+       </h5><br>
+    <p class="offcanvas-text "><span class="fw-bold " style="color:darkgreen"> Quality</span>:Protein Content,Gluten Strength</p>
+    <p class="offcanvas-text "> <span class="fw-bold " style="color:darkgreen"> Quantity:</span> 1kg</p>
+    <p class="offcanvas-text "><span class="fw-bold " style="color:darkgreen"> Price:</span> 20/- kg</p>
+    <p class="offcanvas-text"><span class="fw-bold " style="color:darkgreen"> Detail: </span>High-protein wheat is suitable for bread making,while low-protein whea is better for cakes and pastries. </p>
+    <button class="btn btn-outline-success  shadow-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+     role="button" aria-controls="offcanvasExample">Buy Now</button>
+
+     </div>
+  </div>
+</div>
+<!----brocli-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample1" aria-labelledby="offcanvasExample1Label">
+   <div class="offcanvas-header">
+     <img class="card-img-top" src="image/brokli.jpeg" alt="Card image cap">
+    </div>
+     <div class="offcanvas-body">
+       <h5 class="offcanvas-title" id="offcanvasExample1Label"><span class="fw-bold " style="color:darkgreen"> 
+        Product Name:</span>Broccli
+       </h5><br>
+    <p class="offcanvas-text "><span class="fw-bold " style="color:darkgreen"> Quality</span>:Appearance</p>
+    <p class="offcanvas-text "> <span class="fw-bold "style="color:darkgreen"> Quantity:</span>1kg</p>
+    <p class="offcanvas-text "><span class="fw-bold "style="color:darkgreen"> Price:</span>20/- kg</p>
+    <p class="offcanvas-text"><span class="fw-bold "style="color:darkgreen"> Detail: </span> Fresh brocoli should have a vibrant green color,firm stalks ,and tightly closed bubs.</p>
+    <button class="btn btn-outline-success  shadow-none" data-bs-toggle="offcanvas" href="#offcanvasExample1"
+     role="button" aria-controls="offcanvasExample1">Buy Now</button>
+
+     </div>
+  </div>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
